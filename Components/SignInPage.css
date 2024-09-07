@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-image: url('C:\Users\Ravindiran.M\Desktop\Final\institute\public\focused-computer-work-stockcake.webp'); */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative; /* Ensure proper stacking context */
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px; /* Adjust width as needed */
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0); /* Gradient background */
+    padding: 30px; /* Padding for inner space */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    position: relative;
+    overflow: hidden; /* Ensure child elements stay within bounds */
+    animation: colorChange 10s infinite alternate; /* Add color change animation */
+}
+
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    }
+    100% {
+        background: linear-gradient(135deg, #c1c1c1, #f0f0f0);
+    }
+}
+
+h1 {
+    margin-bottom: 25px; /* Spacing below heading */
+    color: #333; /* Dark color for text */
+}
+
+label {
+    margin: 15px 0 5px; /* Margin around labels */
+    text-align: left;
+    color: #666; /* Slightly lighter text color */
+}
+
+input,
+select {
+    padding: 12px; /* Padding inside inputs */
+    margin-bottom: 15px; /* Margin below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 4px; /* Rounded corners */
+    width: 100%; /* Full width for inputs and selects */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+button {
+    padding: 12px; /* Padding inside buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    color: #fff; /* White text */
+    background-color: #007bff; /* Primary button color */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 15px; /* Margin above button */
+    width: 100%; /* Full width for buttons */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+#newUser {
+    background-color: #28a745; /* New User button color */
+    border: none; /* Remove default border */
+    margin-top: 20px; /* Margin above button */
+}
+
+#newUser:hover {
+    background-color: #218838; /* Darker color on hover */
+}
